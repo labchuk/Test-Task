@@ -1,0 +1,35 @@
+.file-uploader {
+  &__wrapper {
+    position: relative;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #727171;
+    color: #000;
+    background: #c6ebf1;
+    padding: 5px;
+    &-drag{
+      border-color: #000;
+      border-width: 3px;
+    }
+    &-error{
+      background: #72cfde;
+    }
+  }
+  input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  span {
+    width: 300px;
+  }
+}

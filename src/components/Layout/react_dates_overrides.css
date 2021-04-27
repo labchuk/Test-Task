@@ -1,0 +1,75 @@
+.DateRangePickerInput {
+    color: #000;
+}
+.DateInput:first-child{
+    margin-right: 60px;
+    max-width: 130px;
+}
+.DateInput{
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.DateInput_input {
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #000;
+    padding: 0;
+}
+.DateInput:first-child .DateInput_input {
+    margin-left: 25px;
+}
+.DateInput_input::placeholder {
+    color: #000;
+}
+.DateRangePickerInput_arrow {
+    display: none;
+}
+.DateInput{
+    position: relative;
+}
+.DateInput input {
+    max-width: 100px;
+    width: 100%;
+}
+
+.DateInput:first-child:before{
+    content: url("../../image/Vector.png");
+    top: 2px;
+    position: absolute;
+
+}
+
+.DateRangePicker {
+    max-width: 330px;
+    width: 100%;
+}
+.DateRangePickerInput_calendarIcon svg{
+    display: none;
+}
+.DateRangePickerInput_calendarIcon:after{
+    content: url("../../image/open.png");
+    cursor: pointer;
+}
+.DateRangePickerInput_calendarIcon{
+    margin: 0;
+    padding: 0;
+}
+@media(max-width: 1050px) {
+    .DateInput:first-child{
+        margin-right: 30px;
+    }
+    .DateRangePickerInput_calendarIcon{
+        display: none;
+    }
+}
+@media(max-width: 970px) {
+    .DateInput:first-child{
+        margin-right: 60px;
+    }
+    .DateRangePickerInput_calendarIcon{
+        display: inline-block;
+    }
+}
